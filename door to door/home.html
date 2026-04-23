@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="am">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door-to-Door Taekwondo | የታይኳንዶ ስልጠና በቤትዎ</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <h1>DANNY<span>TKD</span></h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#register">Register</a></li>
+                <li id="google_translate_element"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <img src="6K3A1123.JPG" alt="Danny Student" class="hero-profile-img">
+            <h2 id="typing-h2"></h2>
+            <p id="typing-p"></p>
+
+            <br>
+            <a href="#register" class="btn-main">Get Started</a>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-container">
+
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Door-to-Door Coaching</h3>
+                    <p>Professional Taekwondo training at your home. Save time and train in your comfort zone.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🥋</div>
+                    <h3>Private Sessions</h3>
+                    <p>One-on-one focus on technique, sparring, and Poomsae for rapid progress.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Fitness & Discipline</h3>
+                    <p>Build physical strength and mental focus through traditional martial arts values.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-image">
+            <img src="hero.jpg" alt="Danny - Professional Instructor">
+        </div>
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I am a professional Taekwondo instructor and fitness trainer with a 2nd Dan Black Belt.
+                My mission is to bring the discipline and strength of martial arts directly to your home.
+                With years of experience coaching both children and adults, I focus on technique,
+                mental focus, and overall physical well-being.
+            </p>
+
+            <div class="about-skills">
+                <div class="skill-item"><i>✔</i> 2nd Dan Black Belt (Kukkiwon)</div>
+                <div class="skill-item"><i>✔</i> Level 1 Coaching License</div>
+                <div class="skill-item"><i>✔</i> Private Home Training</div>
+                <div class="skill-item"><i>✔</i> Child Development Specialist</div>
+                <div class="skill-item"><i>✔</i> Personalized Fitness Plans</div>
+                <div class="skill-item"><i>✔</i> Self-Defense Expert</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="register-container">
+            <h2>Join the Academy</h2>
+            <p>Start your journey to physical and mental strength today.</p>
+
+            <form id="tkd-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+2519..." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" id="location" placeholder="e.g. Bole, kazanchis ..." required>
+                </div>
+
+                <div class="form-group">
+                    <label>Age</label>
+                    <select id="age" required>
+                        <option value="" disabled selected>student Age</option>
+                        <option value="4-7"> 4 - 7 years</option>
+                        <option value="8-12"> 8 - 12 years</option>
+                        <option value="13-17"> 13 - 17 years</option>
+                        <option value="18+"> 18+ abult</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Select Program</label>
+                    <select id="program">
+                        <option>Door-to-Door Coaching</option>
+                        <option>Private One-on-One</option>
+                        <option>Kids Taekwondo</option>
+                        <option>Adult Fitness</option>
+                    </select>
+                </div>
+
+                <button type="submit">submit Registration</button>
+            </form>
+        </div>
+    </section>
+    <div id="thank-you-box" class="success-message">
+        <span class="icon">🥋</span>
+        <h3>ምዝገባው ተሳክቷል!</h3>
+        <p id="success-p">በቅርቡ እናገኝዎታለን። ስላነጋገሩን እናመሰግናለን!</p>
+        <button onclick="closeBox()" class="btn-main" style="margin-top:20px; cursor:pointer;">እሺ</button>
+    </div>
+    </section>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Danny Taekwondo</h3>
+                <p>Door To Door World Taekwondo class.</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Me</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +251 935368595</li>
+                    <li><i class="fab fa-telegram"></i> @DaniTKD</li>
+                    <li><i class="fas fa-envelope"></i> danielteshome335@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Me</h4>
+                <div class="social-links">
+                    <a href="https://t.me/@DaniTKD3"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="https://www.instagram.com/dan_mystic" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/https://www.facebook.com/profile.php?id=61572985034966"
+                        target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Danny Taekwondo Academy | All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
