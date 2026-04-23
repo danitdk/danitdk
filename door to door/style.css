@@ -1,0 +1,1215 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Navigation - ከላይ ተንሸራቶ እንዲገባ */
+/* እጅግ ዘመናዊ Minimalist Glass Header */
+/* እጅግ ዘመናዊ የእንግሊዝኛ ዲዛይን */
+
+/* 1. Header ማስተካከያ */
+header {
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 1.2rem 8%;
+    border-bottom: 1px solid rgba(211, 47, 47, 0.3);
+    animation: slideDown 0.8s ease-in-out;
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d32f2f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #d32f2f;
+}
+
+/* --- 3. Hero Section (Home) --- */
+#home {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+    overflow: hidden;
+    /* ሜኑው እንዳይሸፍነው ከላይ ክፍተት */
+    padding-top: 80px;
+}
+
+/* የጀርባ ፎቶ Zoom አኒሜሽን */
+/* --- 3. Clean & Minimalist Hero Section --- */
+/* --- Light Mode Hero Section (ነጭ ጀርባ) --- */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    background-color: #ffffff;
+    /* ንጹህ ነጭ ጀርባ */
+    overflow: hidden;
+}
+
+/* ከጀርባ ያለው ፎቶ በጣም ቀለል ብሎ እንዲታይ (Light Overlay) */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8)),
+        url('hero.jpg') no-repeat center center/cover;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    background: #ff0202;
+    /* የሳጥኑ ከለር ነጭ */
+    padding: 60px 40px;
+    border-radius: 20px;
+    /* ማዕዘኖቹን ለሰለስ ማድረግ */
+
+    /* ሳጥኑ ጎልቶ እንዲታይ የሚያደርግ ስስ ጥላ */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05),
+        0 1px 10px rgba(0, 0, 0, 0.02);
+
+    /* በስተግራ በኩል የምትታይ ቀጭን ሰማያዊ መስመር ለየት ለማድረግ */
+    border-left: 8px solid #00d2ff;
+
+    animation: fadeInUp 1s ease-out;
+}
+
+
+/* ትልቁ አርዕስት - አሁን በጥቁር ቀለም መሆን አለበት */
+/* ትልቁ አርዕስት በሳጥኑ ውስጥ */
+#typing-h2 {
+    display: block;
+    /* ሙሉ መስመሩን እንዲይዝ ያደርገዋል */
+    width: 100%;
+    /* ስፋቱ ሙሉ እንዲሆን */
+    text-align: center;
+    /* ጽሁፉን መሃል ላይ ያደርገዋል */
+    font-size: 3.5rem;
+    /* መጠኑን እንዳለ ይቆያል */
+    color: #ca4242;
+    /* የጽሁፉ ቀለም */
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+/* መግለጫው በሳጥኑ ውስጥ */
+#typing-p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    text-align: left;
+    /* ይህንም ወደ ግራ */
+    margin-left: 0;
+}
+
+/* በተኑን ሳጥኑ ውስጥ ወደ ግራ ለማስቀመጥ */
+.hero-content {
+    max-width: 500px;
+    /* ሳጥኑ ከዚህ በላይ እንዳይሰፋ */
+    width: 90%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ፎቶው መሃል ላይ እንዲሆን */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.hero-profile-img {
+    width: 100px !important;
+    /* መጠኑን እዚህ ጋር እንቆልፈዋለን */
+    height: 100px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00d2ff;
+    margin-bottom: 20px;
+}
+
+/* በተኑን ደመቅ ያለ ሰማያዊ ማድረግ (በነጭ ላይ ጎልቶ እንዲታይ) */
+.btn-main {
+    display: inline-block;
+    padding: 15px 45px;
+    background: #00d2ff;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2);
+}
+
+.btn-main:hover {
+    background: #0099cc;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 210, 255, 0.4);
+}
+
+/* ሞባይል ላይ እንዳይበላሽ */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 5%;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #d32f2f;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d32f2f;
+}
+
+/* --- 3. Premium Hero Section (Home) --- */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+/* የጀርባ ፎቶ ከጨለማ ግራዲየንት ጋር */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 30%, rgba(211, 47, 47, 0.3) 100%),
+        url('hero.jpg') no-repeat center center/cover;
+    z-index: -1;
+    animation: slowZoom 10s infinite alternate;
+}
+
+/* የጽሁፉ ሳጥን ማሳመሪያ (The Glass Box) */
+.hero-content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 900px;
+    margin: 0 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1.2s ease-out;
+}
+
+/* ዋናው ትልቅ ጽሁፍ */
+.hero-content h2 {
+    font-size: 5rem;
+    /* በጣም ግዙፍ ጽሁፍ */
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 3px 3px 0px #d32f2f;
+    /* የቀይ ጥላ */
+}
+
+/* ንዑስ ጽሁፉን ለየት ባለ ሁኔታ ማሳመሪያ */
+.hero-content p {
+    font-size: 1.4rem;
+    color: #eee;
+    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-left: 5px solid #d32f2f;
+    /* ጎን ላይ ቀይ መስመር */
+    padding-left: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+/* በተኖቹ ላይ "Glow" መጨመር */
+.btn-main {
+    background: #d32f2f;
+    box-shadow: 0 0 20px rgba(211, 47, 47, 0.6);
+    padding: 18px 45px;
+    font-size: 1.1rem;
+}
+
+.btn-main:hover {
+    box-shadow: 0 0 40px rgba(211, 47, 47, 0.9);
+    transform: scale(1.05);
+}
+
+/* ፎቶው ቀስ እያለ እንዲንቀሳቀስ */
+@keyframes slowZoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* ለሞባይል */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-content {
+        padding: 40px 20px;
+    }
+}
+
+/* Services Section */
+/* --- 6. Services Section (Agelglotachn) --- */
+/* --- Services Section Styling --- */
+#services {
+    padding: 80px 0;
+    background-color: #ffffff;
+    /* ነጭ ጀርባ */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    /* መጠኑን ትንሽ ከፍ አደረግነው */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /* በፊደላቱ መካከል ክፍተት እንዲኖር */
+    color: #1a1a1a;
+    margin-bottom: 70px;
+    position: relative;
+    display: inline-block;
+    /* ከስሩ መስመር ለመጨመር እንዲመች */
+}
+
+/* ከርዕሱ ስር የምትታይ ቆንጆ መስመር */
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    background: #00d2ff;
+    /* ያንተ ሰማያዊ ከለር */
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+/* ጽሁፉ ላይ ስስ ጥላ መጨመር ይበልጥ እንዲጎላ ያደርገዋል */
+.section-title {
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ካርዶቹን ጎን ለጎን የሚያደርግ */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* ለሞባይል እንዲመች */
+    padding: 0 20px;
+}
+
+/* እያንዳንዱ ካርድ */
+.service-card {
+    background: #fff;
+    width: 300px;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* ቀለል ያለ ጥላ */
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+/* ካርዱ ሲነካ ወደ ላይ ከፍ እንዲል */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 210, 255, 0.15);
+    border-color: #00d2ff;
+}
+
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ካርዶቹ መጀመሪያ እንዳይታዩ */
+.service-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* የአኒሜሽኑ ትዕዛዝ */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* እያንዳንዱ ካርድ በተለያየ ሰከንድ እንዲመጣ (Delay) */
+.service-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* ለ 3D እይታ እንዲመች የሳጥኑ አቀማመጥ */
+.services-container {
+    perspective: 1000px;
+    /* የ 3D ጥልቀት ይሰጠዋል */
+}
+
+.service-card {
+    background: #fff;
+    width: 300px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    /* እነዚህን ጨምር ግን በውስጥ በኩል ሌላ ብሬኬት { አትክፈት */
+    transition: transform 0.1s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+/* ካርዱ ሲነካ ጥላው እንዲጨምር */
+
+.service-card:hover {
+    box-shadow: 0 30px 60px rgba(0, 210, 255, 0.2);
+}
+
+/* በካርዱ ውስጥ ያሉት ጽሁፎችም ብቅ እንዲሉ (Pop-out) */
+.service-card h3,
+.service-icon {
+    transform: translateZ(50px);
+    /* ጽሁፉ ከካርዱ ወጣ ብሎ እንዲታይ */
+}
+
+/* --- 7. Instructor Section (Sele Asltagnu) --- */
+/* --- About Section Design --- */
+#about {
+    padding: 100px 10%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* ለሞባይል እንዲመች */
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px #00d2ff;
+    /* ከፎቶው ጀርባ ያለ ሰማያዊ ጥላ */
+    transition: all 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.03);
+    box-shadow: 10px 10px 0px #00d2ff;
+}
+
+.about-text {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* ያንተ ዋና ዋና ብቃቶች (Points) */
+.about-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.skill-item i {
+    color: #00d2ff;
+    font-size: 1.2rem;
+}
+
+.stat-item {
+    background: #222;
+    padding: 15px;
+    border-left: 4px solid #d32f2f;
+    border-radius: 5px;
+}
+
+.stat-item h5 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.stat-item span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* ለሞባይል ሲሆን */
+@media (max-width: 768px) {
+    #about {
+        padding: 60px 5%;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .about-img img {
+        box-shadow: 10px 10px 0px #d32f2f;
+    }
+}
+
+/* ሞባይል ላይ ሲሆን */
+@media (max-width: 768px) {
+    #services h3 {
+        font-size: 2rem;
+    }
+
+    .service-box {
+        padding: 30px 20px;
+    }
+}
+
+/* Registration Form */
+/* --- 8. Modern Registration Form --- */
+/* --- Registration Section Design --- */
+#register {
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    /* ደስ የሚል የጀርባ ቀለም */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.register-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+
+.register-container p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* የፎርሙ ግብዓቶች (Inputs) */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* እዚህ ጋር ነው ሰማያዊው መስመር የሚመጣው */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.1);
+}
+
+/* የላኪ በተን (Submit Button) */
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(to right, #00d2ff, #3a7bd5);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(58, 123, 213, 0.3);
+}
+
+/* --- Registration Form Text Fix --- */
+
+/* 1. የፎርሙ ስሞች (Full Name, Phone Number...) */
+.form-group label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 800;
+    /* በጣም ጎልቶ እንዲታይ (Extra Bold) */
+    color: #000000 !important;
+    /* በምንም እንዳይቀየር !important ጨምረናል */
+    font-size: 1.1rem;
+    /* መጠኑን ትንሽ ከፍ አድርገነዋል */
+    text-align: left;
+    letter-spacing: 0.5px;
+    opacity: 1 !important;
+    /* ሙሉ በሙሉ እንዲታይ */
+}
+
+/* 2. መጻፊያ ሳጥኖቹ ውስጥ ያለው ጽሁፍ (Placeholder) */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666666;
+    /* ሳጥኑ ውስጥ ያለው ጽሁፍም እንዲታይ */
+    font-weight: 400;
+}
+
+/* 3. መጻፊያ ሳጥኖቹ በራሳቸው */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 18px;
+    /* ሳጥኑን ሰፋ አደረግነው */
+    border: 2px solid #222222;
+    /* የሳጥኑ መስመር ጠቆር ያለ እንዲሆን */
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* 4. የሳጥኑ መስመር ሲነካ */
+.form-group input:focus {
+    border-color: #00d2ff;
+    box-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
+    outline: none;
+}
+
+/* የቅጹ ሳጥን ማሳመሪያ */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #161616;
+    /* ትንሽ ቀለል ያለ ጥቁር */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ከቅጹ ጎን ቀጭን ቀይ መስመር */
+form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #d32f2f;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* የጽሁፍ መግቢያዎች (Inputs) */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 25px;
+    background: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* መረጃ ለመጻፍ ስትነካው የሚሆን ለውጥ */
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #d32f2f;
+    background: #2a2a2a;
+    box-shadow: 0 0 10px rgba(211, 47, 47, 0.2);
+}
+
+/* የመመዝገቢያ በተን */
+form button {
+    width: 100%;
+    padding: 18px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #b71c1c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3);
+}
+
+/* --- 9. Premium Typography (የጽሁፍ ማሳመሪያ) --- */
+
+/* ለዋና ዋና አርዕስቶች (H2, H3) */
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    /* ይህ ፎንት ከሌለህ 'Segoe UI' ይጠቀማል */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* ለንዑስ አርዕስቶች (H4) */
+h4 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* ለዝርዝር ጽሁፎች (Paragraphs) */
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    /* ቀጭን እና ዘመናዊ ጽሁፍ */
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
+}
+
+/* ልዩ የጽሁፍ ጥላ እና ግራዲየንት ለ Hero Section */
+.hero-content h2 {
+    background: linear-gradient(to bottom, #ffffff 60%, #aaaaaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+    font-size: 4.5rem;
+    /* ትልቅ እና ገዝፋ ያለ ጽሁፍ */
+}
+
+/* ጽሁፉን ይበልጥ ጎልቶ እንዲታይ ለማድረግ (Text Selection) */
+::selection {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+/* አርዕስቶች ላይ የሚጨመር ትንሽ ቀይ ምልክት */
+h3::before {
+    content: '// ';
+    color: #d32f2f;
+    font-weight: 400;
+}
+
+/* ... ከላይ ሌሎች የሰራናቸው ኮዶች አሉ ... */
+
+/* የመመዝገቢያ ቅጹ መጨረሻ እዚህ ጋር ካበቃ */
+form button:hover {
+    background: #b71c1c;
+    transform: translateY(-3px);
+}
+
+/* ልክ ከእሱ ቀጥሎ አዲሱን ኮድ እንዲህ አስገባው */
+
+/* --- 9. Premium Typography (የጽሁፍ ማሳመሪያ) --- */
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+/* ... የቀሩትንም እስከ መጨረሻው ድረስ እዚህ ጋር ቀጥል ... */
+/* ሞባይል ላይ ሲሆን */
+@media (max-width: 768px) {
+    form {
+        padding: 30px 20px;
+    }
+
+    #register h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Keyframes - የአኒሜሽን መመሪያዎች */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes colorShift {
+    0% {
+        background: rgba(0, 0, 0, 0.6);
+    }
+
+    50% {
+        background: rgba(211, 47, 47, 0.2);
+    }
+
+    100% {
+        background: rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Google Translate Button Styling */
+/* Google Translate Styling */
+#google_translate_element {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.goog-te-gadget-simple {
+    background-color: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    padding: 3px !important;
+    border-radius: 4px !important;
+}
+
+.goog-te-gadget-simple span {
+    color: #fff !important;
+}
+
+/* ... ከላይ ያሉት የድሮ ኮዶችህ ናቸው ... */
+
+/* የመጨረሻው መስመር ላይ ይሄንን አዲሱን ጨምር */
+
+/* --- የቀለማት ለውጥ ብቻ (ከቀይ ወደ ሰማያዊ) --- */
+.logo span,
+h3::before {
+    color: #00d2ff !important;
+}
+
+.hero-content h2 {
+    text-shadow: 3px 3px 0px #00d2ff;
+}
+
+.hero-content p {
+    border-left: 5px solid #00d2ff;
+}
+
+.btn-main {
+    background: #00d2ff !important;
+    color: #000;
+}
+
+.service-box:hover,
+form::before,
+.stat-item {
+    border-color: #00d2ff !important;
+}
+
+/* የጽሁፍ መፃፊያ ምልክት (Cursor) አኒሜሽን */
+#typing-text::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+    color: #00d2ff;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* --- Footer Styling --- */
+.main-footer {
+    background-color: #111;
+    /* ከባክግራውንዱ ትንሽ ለየት ያለ ጥቁር */
+    color: #ffffff;
+    padding: 60px 10% 20px;
+    border-top: 1px solid #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info,
+.footer-contact,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3 {
+    font-size: 1.8rem;
+    color: #00d2ff;
+    margin-bottom: 20px;
+}
+
+.footer-contact h4,
+.footer-social h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-left: 3px solid #00d2ff;
+    padding-left: 10px;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 15px;
+    color: #b0b0b0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-contact i {
+    color: #00d2ff;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #00d2ff;
+    transform: translateY(-5px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Success Message Styling */
+.success-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    width: 90%;
+    /* በሞባይልም እንዲታይ */
+    max-width: 400px;
+    /* በጣም እንዳይሰፋ */
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 9999;
+    /* ከሁሉም በላይ እንዲሆን */
+    border-top: 6px solid #00d2ff;
+    animation: popIn 0.4s ease-out;
+    /* ብቅ ሲል አኒሜሽን እንዲኖረው */
+}
+
+/* ጽሁፉ በደንብ እንዲታይ ቀለሙን ጥቁር አድርገው */
+success-p {
+    color: #333 !important;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    display: block !important;
+    /* መኖሩን እርግጠኛ ለመሆን */
+}
+
+.success-message h3 {
+    color: #1a1a1a;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+/* ብቅ ሲል ደስ የሚል አኒሜሽን */
+@keyframes popIn {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
